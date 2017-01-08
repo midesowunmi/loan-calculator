@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loan Payment Calculator</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="lib//bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lib/slider.css">
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="lib/angular1.5.min.js"></script>
+    <script src="lib/slider.min.js"></script>
+    <script src="lib/require.js"></script>
+
+
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+         <div class="col-md-12 text-center">
+             <h1><small>Calculate how much your monthly payments could be</small></h1>
+         </div>
+        <div class="col-md-12 main-wrapper">
+            <div class="col-md-6 left-column">
+                <div class="row row-border">
+                    <div class="col-md-6 col-xs-6 align-left">Amount to borrow</div>
+                    <div class="col-md-6 col-xs-6">
+                        <loan-amount></loan-amount>
+                    </div>
+                </div>
+                <div class="row row-border">
+                    <div class="col-md-6 col-xs-6 align-left">Interest rate</div>
+                    <div class="col-md-6 col-xs-6">
+                        <interest-rate></interest-rate>
+                    </div>
+                </div>
+
+                <div class="row">
+                        <monthly-amount></monthly-amount>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 text-center right-column">
+                <div class="payment-wrapper">
+                <h2 class="small">Based on what you entered, your monthly payment could be</h2>
+                <div class="row"> <span class="green"><monthly-payment></monthly-payment></span></div>
+                <div class="row">
+                    <button type="button" class="btn btn-warning">Get Started</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

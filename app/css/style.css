@@ -1,0 +1,81 @@
+.form-control{
+    color: #96c900;
+    font-size: 18px;
+}
+.input-currency{
+    position: relative;
+}
+.input-currency input{
+    padding-left: 20px;
+}
+.input-currency:before{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    content: "$";
+    color: #96c900;
+    font-size: 18px;
+}
+
+.input-percent{
+    position: relative;
+}
+.input-percent input{
+    padding-right: 20px;
+}
+.input-percent:after{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    content: "%";
+    color: #96c900;
+    font-size: 18px;
+}
+.left-column{
+    padding: 0px 50px;
+}
+
+.main-wrapper{
+    display: flex;
+
+
+}
+
+.right-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+}
+@media (max-width: 480px){
+    .right-column{
+        display: block;
+
+    }
+    .main-wrapper{
+        display: block;
+
+
+    }
+}
+.row{
+    margin-bottom: 15px;
+    padding: 20px;
+}
+.row-border{
+    border-bottom: 1px solid #999;
+}
+
+.slider-wrapper{
+    padding: 20px 0px;
+    margin-top: 40px;
+}
+.left-column .col-sm-6{
+    padding: 0;
+}
+
+.textBigGreen{
+    font-size: 36px;
+    color: #96c900;
+}
